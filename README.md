@@ -1,4 +1,5 @@
-# NJU-DisSys-2017
-This is the resource repository for the course Distributed System, Fall 2017, CS@NJU.
-
-In Assignment 2 and Assignment 3, you should primarily focus on /src/raft/...
+# NJU-DisSys-2021
+Implementation for Distributed Systerm 2021 Experiment
+By Xu Chen
+2021/12
+Could pass all test samples stably (In this experiment)
