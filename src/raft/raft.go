@@ -360,7 +360,7 @@ func (rf *Raft) sendAppendEntry(server int, args AppendEntryArgs, reply *AppendE
 				rf.MatchIndex[server] = rf.NextIndex[server] - 1
 			}
 		} else { // adjust nextindex
-			prevind := args.PrevLogIndex
+			prevind := min(args.PrevLogIndex, len(rf.logs)-1)
 			prevterm := args.PrevLogTerm
 			for prevind >= 0 {
 				if rf.logs[prevind].Term == prevterm {
